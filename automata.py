@@ -54,7 +54,7 @@ class Row(list):
 
 def main():
     center = 32
-    r = Row(Cell() for _ in range(2 * center + 1))
+    r = Row(Cell('*', '_') for _ in range(2 * center + 1))
     r[center].change()
 
     for _ in range(center):
@@ -64,3 +64,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# ДЗ
+# Реализовать визуализацию правила 30
+# Реализовать генератор случайных 0 и 1 через одномерный автомат
